@@ -65,6 +65,9 @@ header ul li a:hover {
   position: relative;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main img {
@@ -76,4 +79,13 @@ header ul li a:hover {
 
 #moon {
   mix-blend-mode: screen;
+  transform: translateY(80px);
+  animation: moon 10s linear infinite;
+}
+
+.title {
+  color: #fff;
+  font-size: 25px;
+  transform: translateY(-140px);
+  text-transform: uppercase;
 }
