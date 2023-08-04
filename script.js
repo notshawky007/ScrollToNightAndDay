@@ -41,4 +41,23 @@ window.addEventListener("scroll", function () {
     title.style.display = "block";
     title.style.position = "static";
   }
+
+  // Show or hide the "Scroll to Top" button based on the scroll position
+  const scrollToTopButton = document.getElementById("scrollToTop");
+  if (value >= 1000) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
 });
+
+// Function to handle smooth scrolling to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+// Add event listener to the "Scroll to Top" button
+document.getElementById("scrollToTop").addEventListener("click", scrollToTop);
